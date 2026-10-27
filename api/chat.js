@@ -2,6 +2,7 @@
 // RIELLA AI - GEMINI BACKEND
 // Created and customized by Mariella Arao
 // Hosted on Vercel
+// Riella Gemini model update
 
 const MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
 
