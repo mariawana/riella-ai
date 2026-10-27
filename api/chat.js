@@ -2,7 +2,6 @@
 // RIELLA AI - GEMINI BACKEND
 // Created and customized by Mariella Arao
 // Hosted on Vercel
-// Riella Gemini model update
 
 const MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
 
@@ -92,9 +91,10 @@ export default async function handler(req, res) {
 
     const controller = new AbortController();
 
+    // Increased timeout from 25 seconds to 55 seconds.
     const timeout = setTimeout(() => {
       controller.abort();
-    }, 25000);
+    }, 55000);
 
     let response;
 
